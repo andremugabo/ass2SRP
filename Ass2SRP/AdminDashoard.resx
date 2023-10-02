@@ -117,32 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="st_names.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="st_email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="st_reg.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="d_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="p_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAARpJREFUaEPt
-        mlEKwjAQRD2YiLR6/wOIqKBeo26bWVj9kc6utMg8iEmwHfYJJZh0MwzD0drV2lwu1vpNEZZ1QOZcWh32
-        cZ6mHCfUkcaycnVgQIM60iCORiIO6kiDOBqJOKgjDeJo/lJkj8yv2LVdu+UnIlwd6Ee2+P4rdu2u3dJE
-        rEsvqm06wdWBngaB6UUVY5oqkRQSCUjEkUhAIoHqIuhFFUOaapHMopqiWoRCIgGJOBIJSCQgEUciAYkE
-        JOJIJCCRgEQciQQkEogBy/3ffs9YdBM7xUfGopvYKUoy0NOsUUTPCIYjFT/GKp4RbdBhSCMRRyKBKpHM
-        iewNRVSc6qZfcxrPyJ/TdB53ax2KYDMe1vycfXzxjMwY+he1H31k1HFmVgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAadJREFUaEPt
@@ -156,7 +134,58 @@
         GfdexwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAARpJREFUaEPt
+        mlEKwjAQRD2YiLR6/wOIqKBeo26bWVj9kc6utMg8iEmwHfYJJZh0MwzD0drV2lwu1vpNEZZ1QOZcWh32
+        cZ6mHCfUkcaycnVgQIM60iCORiIO6kiDOBqJOKgjDeJo/lJkj8yv2LVdu+UnIlwd6Ee2+P4rdu2u3dJE
+        rEsvqm06wdWBngaB6UUVY5oqkRQSCUjEkUhAIoHqIuhFFUOaapHMopqiWoRCIgGJOBIJSCQgEUciAYkE
+        JOJIJCCRgEQciQQkEogBy/3ffs9YdBM7xUfGopvYKUoy0NOsUUTPCIYjFT/GKp4RbdBhSCMRRyKBKpHM
+        iewNRVSc6qZfcxrPyJ/TdB53ax2KYDMe1vycfXzxjMwY+he1H31k1HFmVgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="p_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
+  <metadata name="d_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="st_reg.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="st_email.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="st_names.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFiSURBVGhD7dQ7TgNBEIRh+ygOHDnkTJASciKMRMoJLO7C8xCmC35HPbVIZgxrpj+pJeSunZ0K
+        lkUZwX6/X8dcxmxjnphbflsTm5e42DLmIuYm5iHmPeY7yiirZ/TskuN+j17Kyw8Xf4v5qdeY0xbToRx+
+        HXMf8xJzanqH3qV3Hl8sHtzEXMXosOeYv6Y76C6604ZrZrFcEVJYH+bc6Y6HYqtDibuYc7dVkX+hiszN
+        GEU+/xtMIJawtoglrC1iTVVEiCWsLWIJa4tYUxURYglri1jC2iLWNEaRc1JF5maMInxjFrGEtUUsYW0R
+        a6oiQixhbRFLWFvEmqqIEEtYW8QS1haxpjGKnJMqMjdjFOEbs4glrC1iCWuLWFMVEWIJa4tYwtoi1lRF
+        hFjC2iKWsLaINY1R5Fi81yLWVRWZwn0tYl1VkSnc1yLWVRWZwn0tYl3p0MevP/vhvhaxnnYcXUpfi8UH
+        +FM7O3AhAQMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAKMSURBVGhD7do9axVBFMbxm1JsRKwUQYJfwUJSmkYRGwshhY2gKcUmoI2lnYWNYqOtVoIBFcQ3
+        bMRCCQriCxK08BMoNuszM/+7527ubJgMezEH8oMDd545M3s2IQRCRlvRNM0z1dhT4sHozpne3+IBLeLB
+        cG2LeHjc3yIeDNe2iIfH/S3iwXBti3hrdO6k6lu8IYOejlxWq+L+r6oToadD4Xrc7kFPRy6rVXn/99DT
+        wUavXE/JuVK194eeDvJeuZ6Sc6Vq7w89HeSbOaB6lT5GL1QH08dBVN3P+IZ8Mw9V+2kP/eHBq2FjIFX3
+        027I3WF8Q+4O4xtydxh/x/bFd8odxjfk7jC+IXeH8Q25O4xvyN1hfEPuDuMbcncY35C7w/iGfFZuqhZV
+        b+Mq771qnirG+IZ8Fl6r9vKMxzHJexMHEdZFOGLIh/REtYfrI61zL/JF9Uv131/ktmpFtfEvMGuq86pz
+        PGLji/xRLZDPqc7GJgmbpThiyGsscv55Wk75HR8g+jz5IvfJdqkuquZjk4TNUhwx5DVqX2SZ7ExaNrdi
+        k7AuwhFDXuqu6hp1mPMXJrLPqrG+FzlNdiktm9XYJKyLcMSQlzrCsSztP0htUd+LHCe7mpbNy9gkrItw
+        xJCXuqEKP+ChDnF+aSL7qBrre5ElsuW0bO7FJmFdhCOGvEbtz8gVsqNp2VyOTcK6CEcMeY3aF3mnmiPf
+        p9odmyRsluKIIa9xXRV+X3yKq2l/VWE/1IcQTLijOqY6pXqkGvcVY3xD7g7jG3J3GN+Qu8P4htwdxjfk
+        7jC+IXeH8Q25O4xvyN1hfEPuDuMbcncY35C7w/hG2Y+05co64xuF4V84fsZtH8IXfvpfOHZsC6PRP6H/
+        E6pG3IGgAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_claim = new System.Windows.Forms.TextBox();
-            this.btn_claim = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lbl_logged_info = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_claim = new System.Windows.Forms.Button();
+            this.txt_claim = new System.Windows.Forms.TextBox();
             this.dgv_claims = new System.Windows.Forms.DataGridView();
             this.cl_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cl_data = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +57,27 @@
             this.panel1.Size = new System.Drawing.Size(1084, 100);
             this.panel1.TabIndex = 0;
             // 
+            // lbl_logged_info
+            // 
+            this.lbl_logged_info.AutoSize = true;
+            this.lbl_logged_info.ForeColor = System.Drawing.Color.White;
+            this.lbl_logged_info.Location = new System.Drawing.Point(44, 39);
+            this.lbl_logged_info.Name = "lbl_logged_info";
+            this.lbl_logged_info.Size = new System.Drawing.Size(59, 20);
+            this.lbl_logged_info.TabIndex = 0;
+            this.lbl_logged_info.Text = "Names";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(457, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student Claims";
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -72,15 +95,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Claim";
             // 
-            // txt_claim
-            // 
-            this.txt_claim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_claim.Location = new System.Drawing.Point(18, 52);
-            this.txt_claim.Multiline = true;
-            this.txt_claim.Name = "txt_claim";
-            this.txt_claim.Size = new System.Drawing.Size(382, 374);
-            this.txt_claim.TabIndex = 0;
-            // 
             // btn_claim
             // 
             this.btn_claim.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -90,32 +104,28 @@
             this.btn_claim.Name = "btn_claim";
             this.btn_claim.Size = new System.Drawing.Size(292, 57);
             this.btn_claim.TabIndex = 1;
-            this.btn_claim.Text = "button1";
+            this.btn_claim.Text = "Submit";
             this.btn_claim.UseVisualStyleBackColor = false;
+            this.btn_claim.Click += new System.EventHandler(this.btn_claim_Click);
             // 
-            // label1
+            // txt_claim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(457, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student Claims";
-            // 
-            // lbl_logged_info
-            // 
-            this.lbl_logged_info.AutoSize = true;
-            this.lbl_logged_info.ForeColor = System.Drawing.Color.White;
-            this.lbl_logged_info.Location = new System.Drawing.Point(44, 39);
-            this.lbl_logged_info.Name = "lbl_logged_info";
-            this.lbl_logged_info.Size = new System.Drawing.Size(59, 20);
-            this.lbl_logged_info.TabIndex = 0;
-            this.lbl_logged_info.Text = "Names";
+            this.txt_claim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_claim.Location = new System.Drawing.Point(18, 52);
+            this.txt_claim.Multiline = true;
+            this.txt_claim.Name = "txt_claim";
+            this.txt_claim.Size = new System.Drawing.Size(382, 374);
+            this.txt_claim.TabIndex = 0;
             // 
             // dgv_claims
             // 
+            this.dgv_claims.AllowUserToAddRows = false;
+            this.dgv_claims.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dgv_claims.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_claims.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -127,24 +137,33 @@
             this.cl_status});
             this.dgv_claims.Location = new System.Drawing.Point(434, 127);
             this.dgv_claims.Name = "dgv_claims";
+            this.dgv_claims.ReadOnly = true;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgv_claims.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_claims.RowTemplate.Height = 28;
             this.dgv_claims.Size = new System.Drawing.Size(662, 533);
             this.dgv_claims.TabIndex = 2;
             // 
             // cl_name
             // 
+            this.cl_name.DataPropertyName = "cl_name";
             this.cl_name.HeaderText = "Claim";
             this.cl_name.Name = "cl_name";
+            this.cl_name.ReadOnly = true;
             // 
             // cl_data
             // 
+            this.cl_data.DataPropertyName = "cl_date";
             this.cl_data.HeaderText = "Claim Date";
             this.cl_data.Name = "cl_data";
+            this.cl_data.ReadOnly = true;
             // 
             // cl_status
             // 
+            this.cl_status.DataPropertyName = "cl_status";
             this.cl_status.HeaderText = "Claim Status";
             this.cl_status.Name = "cl_status";
+            this.cl_status.ReadOnly = true;
             // 
             // StudentClaims
             // 
@@ -156,6 +175,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "StudentClaims";
             this.Text = "StudentClaims";
+            this.Load += new System.EventHandler(this.StudentClaims_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

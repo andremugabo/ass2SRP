@@ -137,7 +137,37 @@ namespace Ass2SRP
                     }
                     else
                     {
-                        MessageBox.Show("Staff");
+                        String query = "SELECT count(*) FROM staffs  WHERE stf_email = '" + email + "' AND stf_password = '" + password + "'  AND stf_status = 1 ";
+                        SqlCommand cmd = new SqlCommand(query, con);
+                        int countLog = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (countLog == 1)
+                        {
+
+                            try
+                            {
+
+                                //MessageBox.Show(countLog.ToString());
+                                String selectLog = "SELECT stf_id FROM staffs WHERE stf_email ='" + email + "' ";
+                                SqlCommand cmdLog = new SqlCommand(selectLog, con);
+                                object results = cmdLog.ExecuteScalar();
+                                String IdLog = results.ToString();
+
+                                LogInfo.logId = IdLog;
+                                AdminDashoard std = new AdminDashoard();
+                                std.Show();
+                                this.Hide();
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.ToString());
+                            }
+
+                        }
+                        else
+                        {
+                            lbl_errorMessage.Text = "User not found !!!";
+                        }
                     }
                     
 

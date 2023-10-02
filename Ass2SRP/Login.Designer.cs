@@ -34,12 +34,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbl_errorMessage = new System.Windows.Forms.Label();
+            this.lbl_staff = new System.Windows.Forms.CheckBox();
             this.chB_showPassword = new System.Windows.Forms.CheckBox();
             this.txtB_LPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_staff = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,10 +50,10 @@
             this.lklb_to_signup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lklb_to_signup.Location = new System.Drawing.Point(296, 437);
             this.lklb_to_signup.Name = "lklb_to_signup";
-            this.lklb_to_signup.Size = new System.Drawing.Size(209, 20);
+            this.lklb_to_signup.Size = new System.Drawing.Size(216, 20);
             this.lklb_to_signup.TabIndex = 4;
             this.lklb_to_signup.TabStop = true;
-            this.lklb_to_signup.Text = "Don\'t have account? Singup";
+            this.lklb_to_signup.Text = "Don\'t have account? Sign Up";
             this.lklb_to_signup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklb_to_login_LinkClicked);
             // 
             // btn_login
@@ -123,6 +123,18 @@
             this.lbl_errorMessage.TabIndex = 6;
             this.lbl_errorMessage.Click += new System.EventHandler(this.lbl_errorMessage_Click);
             // 
+            // lbl_staff
+            // 
+            this.lbl_staff.AutoSize = true;
+            this.lbl_staff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_staff.Location = new System.Drawing.Point(639, 307);
+            this.lbl_staff.Name = "lbl_staff";
+            this.lbl_staff.Size = new System.Drawing.Size(138, 24);
+            this.lbl_staff.TabIndex = 5;
+            this.lbl_staff.Text = "Are you a staff";
+            this.lbl_staff.UseVisualStyleBackColor = true;
+            this.lbl_staff.CheckedChanged += new System.EventHandler(this.chB_showPassword_CheckedChanged);
+            // 
             // chB_showPassword
             // 
             this.chB_showPassword.AutoSize = true;
@@ -177,18 +189,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1089, 69);
             this.panel1.TabIndex = 2;
-            // 
-            // lbl_staff
-            // 
-            this.lbl_staff.AutoSize = true;
-            this.lbl_staff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_staff.Location = new System.Drawing.Point(639, 307);
-            this.lbl_staff.Name = "lbl_staff";
-            this.lbl_staff.Size = new System.Drawing.Size(138, 24);
-            this.lbl_staff.TabIndex = 5;
-            this.lbl_staff.Text = "Are you a staff";
-            this.lbl_staff.UseVisualStyleBackColor = true;
-            this.lbl_staff.CheckedChanged += new System.EventHandler(this.chB_showPassword_CheckedChanged);
             // 
             // Login
             // 

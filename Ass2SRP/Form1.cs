@@ -26,7 +26,7 @@ namespace Ass2SRP
         {
             // create a tunnel to the the db
             String query = "SELECT * FROM department";
-            SqlDataAdapter da = new SqlDataAdapter(query,con);
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
             //Create a data to store 
             DataSet ds = new DataSet();
             da.Fill(ds, "department");
@@ -41,7 +41,7 @@ namespace Ass2SRP
         {
             //create tunnel to the db
             String query = "SELECT * FROM programs";
-            SqlDataAdapter sda = new SqlDataAdapter(query,con);
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
             //create a data store 
             DataSet ds = new DataSet();
             sda.Fill(ds, "programs");
@@ -173,14 +173,14 @@ namespace Ass2SRP
             int d_id = Convert.ToInt32(cBox_department.SelectedValue);
             int p_id = Convert.ToInt32(cBox_program.SelectedValue);
             String reg_number = null;
-                        
 
-            if(names !="" && email !="" && password != "")
+
+            if (names != "" && email != "" && password != "")
             {
                 String selectQuery = "SELECT count(*) FROM students";
                 SqlCommand cmd = new SqlCommand(selectQuery, con);
                 con.Open();
-                int countStudents =Convert.ToInt32(cmd.ExecuteScalar());
+                int countStudents = Convert.ToInt32(cmd.ExecuteScalar());
                 //MessageBox.Show(countStudents.ToString());
                 if (countStudents >= 0 && countStudents < 10)
                 {
@@ -212,19 +212,20 @@ namespace Ass2SRP
                 password = MD5Hash(password);
                 //MessageBox.Show(password);
                 bool isValidEmail = IsValidEmail(email);
-               // MessageBox.Show(isValidEmail.ToString());
+                // MessageBox.Show(isValidEmail.ToString());
 
                 if (isValidEmail)
                 {
-                    String checkIfExistEmail = "SELECT count(*) FROM students";
-                    SqlCommand cmdCheckmail = new  SqlCommand(checkIfExistEmail, con);
+                    String checkIfExistEmail = "SELECT count(*) FROM students where st_email = '"+email+"'";
+                    SqlCommand cmdCheckmail = new SqlCommand(checkIfExistEmail, con);
                     int howManyTimeEmail = Convert.ToInt32(cmdCheckmail.ExecuteScalar());
 
-                    if(howManyTimeEmail == 0)
+                    if (howManyTimeEmail == 0)
                     {
-                        
-                        try {
-                            String query = "INSERT INTO students(st_names,st_email,st_password,d_id,p_id,st_status,st_reg) VALUES('"+names+"','"+email+"','"+password+"',"+d_id+","+p_id+","+1+",'"+reg_number+"')";
+
+                        try
+                        {
+                            String query = "INSERT INTO students(st_names,st_email,st_password,d_id,p_id,st_status,st_reg) VALUES('" + names + "','" + email + "','" + password + "'," + d_id + "," + p_id + "," + 1 + ",'" + reg_number + "')";
                             SqlCommand cmdCreate_st = new SqlCommand(query, con);
                             cmdCreate_st.ExecuteNonQuery();
                             MessageBox.Show("Student with  " + email + " Created");
@@ -238,9 +239,9 @@ namespace Ass2SRP
                     }
                     else
                     {
-                        MessageBox.Show("Sorry STUDENT WITH "+email+" Allready Exist ");
+                        MessageBox.Show("Sorry STUDENT WITH " + email + " Allready Exist ");
                     }
-                    
+
 
 
 
@@ -260,11 +261,11 @@ namespace Ass2SRP
 
 
                 //MessageBox.Show(ID + " " + names + " " + email + " " + password + " " + d_id + " " + p_id);
-                
+
             }
             else
             {
-                lbl_error_message.Text = "Fillout all the above fieldText !!";
+                lbl_error_message.Text = "Fill out all the above fieldText !!";
             }
 
             con.Close();
@@ -291,7 +292,7 @@ namespace Ass2SRP
 
         private void chB_showPassword_CheckedChanged(object sender, EventArgs e)
         {
-            if(chB_showPassword.Checked == true)
+            if (chB_showPassword.Checked == true)
             {
                 txtB_password.UseSystemPasswordChar = false;
             }

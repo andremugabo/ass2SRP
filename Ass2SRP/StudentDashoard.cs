@@ -42,7 +42,7 @@ namespace Ass2SRP
         public void fetchParticularStudentInfo()
         {
             // create a tunnel to the db
-            String query = "SELECT students.*,department.*,programs.* FROM students join department on students.d_id = department.d_id join programs on students.p_id = programs.p_id WHERE st_id ='"+LogInfo.logId+"'";
+            String query = "SELECT students.*,department.*,programs.* FROM students join department on students.d_id = department.d_id join programs on students.p_id = programs.p_id WHERE students.st_id ='"+LogInfo.logId+"'";
             SqlDataAdapter sda = new SqlDataAdapter(query,con);
             //create dataset to store your data
             DataSet ds = new DataSet();
@@ -64,6 +64,19 @@ namespace Ass2SRP
         {
             StudentClaims stc = new StudentClaims();
             stc.Show();
+        }
+
+        private void lklb_courses_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Courses cr = new Courses();
+            cr.Show();
+
+        }
+
+        private void btn_courseDS_Click(object sender, EventArgs e)
+        {
+            Courses cr = new Courses();
+            cr.Show();
         }
     }
 }
